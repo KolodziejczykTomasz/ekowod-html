@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <title>EKOWOD</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="brand" href="#">
+      <img src="./assets/logo.svg" alt="Brand Logo" class="brandLogo" width= "150px">
+    </a>
+
+    <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">Start</a>
+      <a class="navbar-item"> O nas</a>
+      <a class="navbar-item">Kontakt</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">Obiekty</a>
+    <div class="navbar-dropdown">
+      <div class="nested dropdown">
+        <a class="navbar-item">
+          <span class="icon-text ">
+            <span class="navbar-item-span">Hydrofornie</span>
+            <span class="icon">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </span>
+        </a>
+        <div class="dropdown-menu"  role="menu">
+          <div class="dropdown-content">
+            <a href="/" class="dropdown-item">
+              Lidzbark Warmiński
+            </a>
+            <a class="dropdown-item">
+              Górowo Iławeckie
+            </a>
+             <a class="dropdown-item">
+              Kolno
+            </a>
+             <a class="dropdown-item">
+              Lubomino
+            </a>
+          </div>
+        </div>
+      </div>      
+       <div class="nested dropdown">
+        <a class="navbar-item">
+          <span class="icon-text ">
+            <span class="navbar-item-span">Oczyszczalnie ścieków</span>
+            <span class="icon">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </span>
+        </a>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="/" class="dropdown-item">
+              Lidzbark Warmiński
+            </a>
+            <a class="dropdown-item">
+             Górowo Iławeckie
+            </a>
+            <a class="dropdown-item">
+              Kolno
+            </a>
+            <a class="dropdown-item">
+              Lubomino
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+  </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+</nav>
+<section class="hero is-medium is-bold">
+    <div class="hero-body">
+        <div class="heroTextWrapper">
+            <div class="wrapperHero">
+                <div class="photoBox"></div>
+                <h1 id="title">Zakład Budżetowy Związku Gmin</h1>
+                <h2 id="subtitle">Gospodarka wodno-ściekowa</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="menuVertical">
+    <div class="asideMenu">
+    <button class="wrapperAsideMenuItem">
+      <a href="/TariffView" class="buttonNaviAside">       
+        <AttachMoneyOutlined class="iconMenu" style="font-size: 30px" />
+        Cennik
+      </a>
+    </button>
+    <button class="wrapperAsideMenuItem" >
+      <a href="/DownloadView" class="buttonNaviAside">       
+        <SaveAltOutlined class="iconMenu" style="font-size: 30px" />
+        Do pobrania
+      </a>
+    </button>
+    <button class="wrapperAsideMenuItem">
+      <a href="/ContactView" class="buttonNaviAside">
+        <ContactPhoneOutlined class="iconMenu" style="font-size: 30px" />
+        Kontakt
+      </a>
+    </button> 
+</div>
+</section>
+<section class="breakSectionTop">
+   <div class="wrapperBreakLine">
+    <div class="wrapperItemLeft">
+      <hr style="border-top: 1.5px solid #1680BC" />
+    </div>
+    <div class="wrapperItemCentral">
+      <div class="wrapperText"> Aktualności </div>
+    </div>
+    <div class="wrapperItemRight">
+      <hr style="border-top: 1.5px solid #1680BC" />
+    </div>
+  </div> 
+</section>
+<section id="news">
+    <div class="mainWrapper" >
+        <div class="wrapperWidgetCard">
+            <div class="wrapperNotice" >
+                <div class="card">
+                    <div class="optional-header">
+                        <div class="thumbnail thumbnail--40x40"><img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" width="40" height="40"></div>
+                        <div class="primary-title">
+                            <div class="title">Title</div>
+                            <div class="subhead">Subhead</div>
+                        </div>
+                    </div>
+                    <div class="media media--16-9"> <img src="https://media.pixeltuner.de/wp-content/uploads/2018/06/Shapes-Abstraction-Background-2466799.jpg" alt="" width="640" height="426"> </div>
+                    <div class="primary-title">
+                        <div class="primary-text">Primary text goes here</div>
+                        <div class="secondary-text">Secondary text</div>
+                    </div>
+                    <div class="supporting-text">Supporting text include text like an article summary or a restaurant description.</div>
+                    <div class="actions">
+                        <div class="action-buttons">
+                            <button class="button" type="button">Action 1</button>
+                            <button class="button" type="button">Action 2</button>
+                        </div>
+                        <div class="action-icons float-right"> <i class="material-icons action-icon" role="button" title="Share">share</i> <i class="material-icons action-icon" role="button" title="More options">more_vert</i> </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <button class="buttonMore">
+            <a class="buttonLink" href="/AllNewsView">więcej</a>
+        </button>
+    </div>
+
+
+
+
+</section>
+<section class="breakSection">
+   <div class="wrapperBreakLine">
+    <div class="wrapperItemLeft">
+      <hr style="border-top: 1.5px solid #1680BC" />
+    </div>
+    <div class="wrapperItemCentral">
+      <div class="wrapperText">
+        <img src="./assets/smlogo.svg" alt="Small Brand mark" style="height: 80px; margin-top: -20px;" />
+    </div>
+    </div>
+    <div class="wrapperItemRight">
+      <hr style="border-top: 1.5px solid #1680BC" />
+    </div>
+  </div> 
+</section>
+<section id="partners">
+<div class="partnersWrapper">
+        <div class="partnersWrapperItem">
+          <a
+            href="http://gminalidzbark.com/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="./assets/herb/uglw.png"
+              alt="Herg Gminy Lidzbark Warmiński"
+              title="Gmina Lidzbark Warmiński"
+              class="partnersWrapperItemPhoto"
+            />
+          </a>
+        </div>
+        <div class="partnersWrapperItem">
+          <a
+            href="http://www.lubomino.ug.gov.pl/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="./assets/herb/uglub.png"
+              alt="Herg Gminy Lubomino"
+              title="Gmina Lubomino"
+              class="partnersWrapperItemPhoto"
+            />
+          </a>
+        </div>
+        <div class="partnersWrapperItem">
+          <a
+            href="https://www.kolno-gmina.pl/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="./assets/herb/ugkol.jpg"
+              alt="Herg Gminy Kolno"
+              title="Gmina Kolno"
+              class="partnersWrapperItemPhoto"
+            />
+          </a>
+        </div>
+        <div class="partnersWrapperItem">
+          <a
+            href="https://gorowoilaweckie.eu/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="./assets/herb/uggi.jpg"
+              alt="Herg Gminy Górowo Iławeckie"
+              title="Gmina Górowo Iławeckie"
+              class="partnersWrapperItemPhoto"
+            />
+          </a>
+        </div>
+      </div>
+</section>
+<footer id="footer" class="wrapperFooter">
+<div>
+ <hr />
+<div class="wrapperWidget">
+    <div class="widgetLeft">
+        <img class="footerPhoto" src="./assets/logo.svg" alt="Logo" />
+    </div>
+    <div class="widgetCenter">        
+        <p class="widgetTitle">Dane kontaktowe</p>   
+        <div class="widgetCenterList">    
+        <ul>
+            <li class="widgetListItem">
+                <HomeOutlined class="widgetIcon" />
+    
+                <span class="widgetIconSpan">EKOWOD</span>
+            </li>
+            <li class="widgetListItem">
+                <LocalPhoneOutlined class="widgetIcon"/>
+
+                <span class="widgetIconSpan">89 764 20 26</span>
+            </li>
+            <li class="widgetListItem">
+                <PinDropOutlined class="widgetIcon"/>
+
+                <span class="widgetIconSpan">
+            ul. Olsztyńska 10D, 11-100 Lidzbark Warmiński
+        </span>
+            </li>
+            <li class="widgetListItem">
+                <EmailOutlined class="widgetIcon"/>
+
+                <span class="widgetIconSpan">biuro@ekowod-lidzbark.pl</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="widgetRight">        
+            <p class="widgetTitle">Strefa klienta</p>       
+        <div class="widgetRightList">
+            <ul>
+                <li class="widgetListItem">
+                    <ChevronRightSharp class="widgetIcon"/>
+                    <span class="widgetIconSpan">
+            <a
+                    href="http://lidzbarkwarminski-ekowod.bip-wm.pl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="linkFooter">
+                Biuletyn Informacji Publicznej
+            </a>
+            </span>
+                </li>
+                <li class="widgetListItem">
+                    <ChevronRightSharp class="widgetIcon"/>
+                    <span class="widgetIconSpan">
+            <a  href="/TariffView" class="linkFooter">Cennik</a>
+            </span>
+                </li>
+                <li class="widgetListItem">
+                    <ChevronRightSharp class="widgetIcon"/>
+                    <span class="widgetIconSpan">
+            <a href="/RodoView" class="linkFooter"> Ochrona danych osobowych</a>
+            </span>
+                </li>
+                <li class="widgetListItem">
+                    <ChevronRightSharp class="widgetIcon"/>
+                    <span class="widgetIconSpan">
+            <a href="/WcagView" class="linkFooter"> Oświadczenie o dostępności </a>
+            </span>
+                </li>
+                <li class="widgetListItem">
+                    <ChevronRightSharp class="widgetIcon"/>
+                    <span class="widgetIconSpan">
+            <a
+                    href="http://ekowod-lidzbark.pl/files/raport.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="linkFooter">
+                Raport dostępności
+            </a>
+            </span>
+                </li>
+                <li class="widgetListItem">
+                    <ChevronRightSharp class="widgetIcon"/>
+                    <span class="widgetIconSpan">
+            <a href="/ContactView" class="linkFooter"> Zgłoś awarię </a>
+            </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p class="copyrightTitle">Copyright &copy; <strong>"EKOWOD"</strong>
+    </p>
+    <p class="copyrightSubtitle">Wszelkie prawa zastrzeżone</p>
+</div>
+<div id="widgetBottom">
+    <div id="widgetBottomLeft">
+        <p class="widgetBottomText">
+            <a href="/CookiesView" class="linkFooter"> Polityka prywatności </a>
+        </p>
+    </div>
+    <div id="widgetBottomRight">
+        <p>
+        <span class="greyText">
+        <a
+                href="https://nettom24.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="linkFooter">
+            NETTOM24</a>
+        </span>
+        </p>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+</html>
