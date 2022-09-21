@@ -94,9 +94,7 @@
           <a class="button is-primary">
             <strong>Sign up</strong>
           </a>
-          <a class="button is-light">
-            Log in
-          </a>
+          <a class="button is-light">Log in</a>
         </div>
       </div>
     </div>
@@ -150,41 +148,229 @@
 <section id="news">
     <div class="mainWrapper" >
         <div class="wrapperWidgetCard">
-            <div class="wrapperNotice" >
-                <div class="card">
-                    <div class="optional-header">
-                        <div class="thumbnail thumbnail--40x40"><img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" width="40" height="40"></div>
-                        <div class="primary-title">
-                            <div class="title">Title</div>
-                            <div class="subhead">Subhead</div>
+            <div class="wrapperNotice">
+               <div class="card">
+                <div class="root">
+                    <div class="cardHeader">
+                        <div class="headerCard">
+                            <div class="avatarWrapper">
+                                <div class="avatar" aria-label="recipe">
+                                   TK
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div class="titleCard">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </div>
+                                </div>
+                                <div>
+                                    <div class="subheaderData">12.12.2022r.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="media media--16-9"> <img src="https://media.pixeltuner.de/wp-content/uploads/2018/06/Shapes-Abstraction-Background-2466799.jpg" alt="" width="640" height="426"> </div>
-                    <div class="primary-title">
-                        <div class="primary-text">Primary text goes here</div>
-                        <div class="secondary-text">Secondary text</div>
-                    </div>
-                    <div class="supporting-text">Supporting text include text like an article summary or a restaurant description.</div>
-                    <div class="actions">
-                        <div class="action-buttons">
-                            <button class="button" type="button">Action 1</button>
-                            <button class="button" type="button">Action 2</button>
-                        </div>
-                        <div class="action-icons float-right"> <i class="material-icons action-icon" role="button" title="Share">share</i> <i class="material-icons action-icon" role="button" title="More options">more_vert</i> </div>
+                    <div class="cardContent" >
+                        <a href="#" target="_blank" rel="noreferrer">
+                            <img src="./assets/gallery/building1.jpg" alt={title} />
+                        </a>
+                <div class="subtitleCard">It is a long established fact that a
+                    reader will be distracted by the readable content of a page when looking at its layout. </div>
+                <div class="paragraphFirst"> There are many variations of
+                    passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.  </div>
+                </div>
+                <div class="cardActions disableSpacing">
+                    <IconButton
+                            className={clsx(classes.expand, {
+                            [classes.expandOpen]: expanded,
+                            })}
+                            onClick={handleExpandClick}
+                            aria-expanded={expanded}
+                            aria-label="Zobacz więcej">
+                        <ExpandMoreIcon />
+                    </IconButton>
+                </div>
+                <div class="collapse">
+                    <div class="cardContent">
+                        <div class="paragraph"> {content2} </div>
+                        <div class="paragraph"> {content3} </div>
+                        <div class="paragraph"> {content4} </div>
+                        <div class="downloadFiles">
+                            <div class="linkWrapper">
+                                <a href={LinkTo} class="linkFooter"> {LinkName} </a> </div>
+                        <div class="footerTitle" > Pliki do pobrania: </div>
+                        <ul>
+                            <li>
+                                <a href={fileLink1} target="_blank" rel="noopener noreferrer"> {fileName1} </a>
+                            </li>
+                            <li>
+                                <a href={fileLink2} target="_blank" rel="noopener noreferrer"> {fileName2} </a>
+                            </li>
+                            <li>
+                                <a href={fileLink3} target="_blank" rel="noopener noreferrer"> {fileName3} </a>
+                            </li>
+                        </ul>
+                   <div id="footerTitle" > Pobierz - całość </div>
+                        <ul>
+                            <li>
+                                <a href={zipLink} target="_blank" rel="noopener noreferrer"> {zipName} </a>
+                            </li>
+                        </ul>
+                     </div>
                     </div>
                 </div>
+                </div>
+                    <button class="buttonMore">
+                        <a class="buttonLink" href="/AllNewsView">więcej</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="root">
+                        <div class="cardHeader">
+                            <div class="headerCard">
+                                <div class="avatarWrapper">
+                                    <div class="avatar" aria-label="recipe">
+                                        TK
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="titleCard">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </div>
+                                    </div>
+                                    <div>
+                                        <div class="subheaderData">12.12.2022r.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardContent" >
+                            <a href="#" target="_blank" rel="noreferrer">
+                                <img src="./assets/gallery/building1.jpg" alt={title} />
+                            </a>
+                            <div class="subtitleCard">It is a long established fact that a
+                                reader will be distracted by the readable content of a page when looking at its layout. </div>
+                            <div class="paragraphFirst"> There are many variations of
+                                passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.  </div>
+                        </div>
+                        <div class="cardActions disableSpacing">
+                            <IconButton
+                                    className={clsx(classes.expand, {
+                                    [classes.expandOpen]: expanded,
+                                    })}
+                                    onClick={handleExpandClick}
+                                    aria-expanded={expanded}
+                                    aria-label="Zobacz więcej">
+                                <ExpandMoreIcon />
+                            </IconButton>
+                        </div>
+                        <div class="collapse">
+                            <div class="cardContent">
+                                <div class="paragraph"> {content2} </div>
+                                <div class="paragraph"> {content3} </div>
+                                <div class="paragraph"> {content4} </div>
+                                <div class="downloadFiles">
+                                    <div class="linkWrapper">
+                                        <a href={LinkTo} class="linkFooter"> {LinkName} </a> </div>
+                                    <div class="footerTitle" > Pliki do pobrania: </div>
+                                    <ul>
+                                        <li>
+                                            <a href={fileLink1} target="_blank" rel="noopener noreferrer"> {fileName1} </a>
+                                        </li>
+                                        <li>
+                                            <a href={fileLink2} target="_blank" rel="noopener noreferrer"> {fileName2} </a>
+                                        </li>
+                                        <li>
+                                            <a href={fileLink3} target="_blank" rel="noopener noreferrer"> {fileName3} </a>
+                                        </li>
+                                    </ul>
+                                    <div id="footerTitle" > Pobierz - całość </div>
+                                    <ul>
+                                        <li>
+                                            <a href={zipLink} target="_blank" rel="noopener noreferrer"> {zipName} </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="buttonMore">
+                        <a class="buttonLink" href="/AllNewsView">więcej</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="root">
+                        <div class="cardHeader">
+                            <div class="headerCard">
+                                <div class="avatarWrapper">
+                                    <div class="avatar" aria-label="recipe">
+                                        TK
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="titleCard">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </div>
+                                    </div>
+                                    <div>
+                                        <div class="subheaderData">12.12.2022r.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardContent" >
+                            <a href="#" target="_blank" rel="noreferrer">
+                                <img src="./assets/gallery/building1.jpg" alt={title} />
+                            </a>
+                            <div class="subtitleCard">It is a long established fact that a
+                                reader will be distracted by the readable content of a page when looking at its layout. </div>
+                            <div class="paragraphFirst"> There are many variations of
+                                passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.  </div>
+                        </div>
+                        <div class="cardActions disableSpacing">
+                            <IconButton
+                                    className={clsx(classes.expand, {
+                                    [classes.expandOpen]: expanded,
+                                    })}
+                                    onClick={handleExpandClick}
+                                    aria-expanded={expanded}
+                                    aria-label="Zobacz więcej">
+                                <ExpandMoreIcon />
+                            </IconButton>
+                        </div>
+                        <div class="collapse">
+                            <div class="cardContent">
+                                <div class="paragraph"> {content2} </div>
+                                <div class="paragraph"> {content3} </div>
+                                <div class="paragraph"> {content4} </div>
+                                <div class="downloadFiles">
+                                    <div class="linkWrapper">
+                                        <a href={LinkTo} class="linkFooter"> {LinkName} </a> </div>
+                                    <div class="footerTitle" > Pliki do pobrania: </div>
+                                    <ul>
+                                        <li>
+                                            <a href={fileLink1} target="_blank" rel="noopener noreferrer"> {fileName1} </a>
+                                        </li>
+                                        <li>
+                                            <a href={fileLink2} target="_blank" rel="noopener noreferrer"> {fileName2} </a>
+                                        </li>
+                                        <li>
+                                            <a href={fileLink3} target="_blank" rel="noopener noreferrer"> {fileName3} </a>
+                                        </li>
+                                    </ul>
+                                    <div id="footerTitle" > Pobierz - całość </div>
+                                    <ul>
+                                        <li>
+                                            <a href={zipLink} target="_blank" rel="noopener noreferrer"> {zipName} </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="buttonMore">
+                        <a class="buttonLink" href="/AllNewsView">więcej</a>
+                    </button>
+                </div>
             </div>
-
         </div>
-        </div>
-        <button class="buttonMore">
-            <a class="buttonLink" href="/AllNewsView">więcej</a>
-        </button>
     </div>
-
-
-
-
 </section>
 <section class="breakSection">
    <div class="wrapperBreakLine">
