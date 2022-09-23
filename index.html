@@ -10,95 +10,23 @@
 
     <title>EKOWOD</title>
 </head>
-<body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="brand" href="#">
+<body>  
+<header class="header">    
+   <a class="logo" href="#">
       <img src="./assets/logo.svg" alt="Brand Logo" class="brandLogo" width= "150px">
     </a>
-
-    <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </div>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">Start</a>
-      <a class="navbar-item"> O nas</a>
-      <a class="navbar-item">Kontakt</a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">Obiekty</a>
-    <div class="navbar-dropdown">
-      <div class="nested dropdown">
-        <a class="navbar-item">
-          <span class="icon-text ">
-            <span class="navbar-item-span">Hydrofornie</span>
-            <span class="icon">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </span>
-        </a>
-        <div class="dropdown-menu"  role="menu">
-          <div class="dropdown-content">
-            <a href="/" class="dropdown-item">
-              Lidzbark Warmiński
-            </a>
-            <a class="dropdown-item">
-              Górowo Iławeckie
-            </a>
-             <a class="dropdown-item">
-              Kolno
-            </a>
-             <a class="dropdown-item">
-              Lubomino
-            </a>
-          </div>
-        </div>
-      </div>      
-       <div class="nested dropdown">
-        <a class="navbar-item">
-          <span class="icon-text ">
-            <span class="navbar-item-span">Oczyszczalnie ścieków</span>
-            <span class="icon">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </span>
-        </a>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-          <div class="dropdown-content">
-            <a href="/" class="dropdown-item">
-              Lidzbark Warmiński
-            </a>
-            <a class="dropdown-item">
-             Górowo Iławeckie
-            </a>
-            <a class="dropdown-item">
-              Kolno
-            </a>
-            <a class="dropdown-item">
-              Lubomino
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-  </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">Log in</a>
-        </div>
-      </div>
-    </div>
-</nav>
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu">
+        <span class="hamb-line"></span>     
+    </label>
+        <nav class="nav">
+        <ul class="menu">
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a> </li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</header>
 <section class="hero is-medium is-bold">
     <div class="hero-body">
         <div class="heroTextWrapper">
